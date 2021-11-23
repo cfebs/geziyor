@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"github.com/geziyor/geziyor/internal"
+	"github.com/cfebs/geziyor/internal"
 	"net/http"
 	"net/url"
 	"sync/atomic"
