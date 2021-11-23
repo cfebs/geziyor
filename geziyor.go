@@ -131,7 +131,7 @@ func NewGeziyor(opt *Options) *Geziyor {
 	if opt.LogDisabled {
 		internal.Logger.SetOutput(ioutil.Discard)
 	} else {
-		internal.Logger.SetOutput(os.Stdout)
+		internal.Logger.SetOutput(os.Stderr)
 	}
 
 	return geziyor
