@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/cfebs/geziyor/client"
-	"github.com/cfebs/geziyor/internal"
+	"github.com/geziyor/geziyor/client"
+	"github.com/geziyor/geziyor/internal"
 	"sync"
 )
 

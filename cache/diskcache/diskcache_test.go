@@ -1,7 +1,7 @@
 package diskcache
 
 import (
-	"github.com/cfebs/geziyor/cache"
+	"github.com/geziyor/geziyor/cache"
 	"io/ioutil"
 	"os"
 	"testing"

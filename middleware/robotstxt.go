@@ -1,9 +1,9 @@
 package middleware
 
 import (
-	"github.com/cfebs/geziyor/client"
-	"github.com/cfebs/geziyor/internal"
-	"github.com/cfebs/geziyor/metrics"
+	"github.com/geziyor/geziyor/client"
+	"github.com/geziyor/geziyor/internal"
+	"github.com/geziyor/geziyor/metrics"
 	"github.com/temoto/robotstxt"
 	"strconv"
 	"sync"

@@ -1,9 +1,9 @@
 # Geziyor
 Geziyor is a blazing fast web crawling and web scraping framework. It can be used to crawl websites and extract structured data from them. Geziyor is useful for a wide range of purposes such as data mining, monitoring and automated testing. 
 
-[![GoDoc](https://godoc.org/github.com/cfebs/geziyor?status.svg)](https://godoc.org/github.com/cfebs/geziyor)
-[![report card](https://goreportcard.com/badge/github.com/cfebs/geziyor)](http://goreportcard.com/report/cfebs/geziyor)
-[![Code Coverage](https://img.shields.io/codecov/c/github/cfebs/geziyor/master.svg)](https://codecov.io/github/cfebs/geziyor?branch=master)
+[![GoDoc](https://godoc.org/github.com/geziyor/geziyor?status.svg)](https://godoc.org/github.com/geziyor/geziyor)
+[![report card](https://goreportcard.com/badge/github.com/geziyor/geziyor)](http://goreportcard.com/report/geziyor/geziyor)
+[![Code Coverage](https://img.shields.io/codecov/c/github/geziyor/geziyor/master.svg)](https://codecov.io/github/geziyor/geziyor?branch=master)
 
 ## Features
 - **JS Rendering**
@@ -17,7 +17,7 @@ Geziyor is a blazing fast web crawling and web scraping framework. It can be use
 - Automatic response decoding to UTF-8
 - Proxy management (Single, Round-Robin, Custom)
 
-See scraper [Options](https://godoc.org/github.com/cfebs/geziyor#Options) for all custom settings. 
+See scraper [Options](https://godoc.org/github.com/geziyor/geziyor#Options) for all custom settings. 
 
 ## Status
 We highly recommend you to use Geziyor with go modules.
@@ -48,13 +48,13 @@ func quotesParse(g *geziyor.Geziyor, r *client.Response) {
 }
 ```
 
-See [tests](https://github.com/cfebs/geziyor/blob/master/geziyor_test.go) for more usage examples.
+See [tests](https://github.com/geziyor/geziyor/blob/master/geziyor_test.go) for more usage examples.
 
 ## Documentation
 
 ### Installation
 
-    go get -u github.com/cfebs/geziyor
+    go get -u github.com/geziyor/geziyor
 
 If you want to make JS rendered requests, make sure you have Chrome installed.
 
@@ -79,7 +79,7 @@ geziyor.NewGeziyor(&geziyor.Options{
 
 If you want to manually create first requests, set ```StartRequestsFunc```.
 ```StartURLs``` won't be used if you create requests manually.  
-You can make requests using ```Geziyor``` [methods](https://godoc.org/github.com/cfebs/geziyor#Geziyor):
+You can make requests using ```Geziyor``` [methods](https://godoc.org/github.com/geziyor/geziyor#Geziyor):
 
 ```go
 geziyor.NewGeziyor(&geziyor.Options{
@@ -131,7 +131,7 @@ geziyor.NewGeziyor(&geziyor.Options{
 ### Exporting Data
 
 You can export data automatically using exporters. Just send data to ```Geziyor.Exports``` chan.
-[Available exporters](https://godoc.org/github.com/cfebs/geziyor/export)
+[Available exporters](https://godoc.org/github.com/geziyor/geziyor/export)
 
 ```go
 geziyor.NewGeziyor(&geziyor.Options{
@@ -193,14 +193,14 @@ geziyor.NewGeziyor(&geziyor.Options{
 
 **8748 request per seconds** on *Macbook Pro 15" 2016*
 
-See [tests](https://github.com/cfebs/geziyor/blob/master/geziyor_test.go) for this benchmark function:
+See [tests](https://github.com/geziyor/geziyor/blob/master/geziyor_test.go) for this benchmark function:
 
 ```bash
 >> go test -run none -bench Requests -benchtime 10s
 goos: darwin
 goarch: amd64
-pkg: github.com/cfebs/geziyor
+pkg: github.com/geziyor/geziyor
 BenchmarkRequests-8   	  200000	    108710 ns/op
 PASS
-ok  	github.com/cfebs/geziyor	22.861s
+ok  	github.com/geziyor/geziyor	22.861s
 ```

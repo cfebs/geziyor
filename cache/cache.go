@@ -11,7 +11,7 @@ import (
 	"bufio"
 	"bytes"
 	"errors"
-	"github.com/cfebs/geziyor/cache/memorycache"
+	"github.com/geziyor/geziyor/cache/memorycache"
 	"io"
 	"io/ioutil"
 	"net/http"

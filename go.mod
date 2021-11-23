@@ -1,4 +1,4 @@
-module github.com/cfebs/geziyor
+module github.com/geziyor/geziyor
 
 go 1.15
 

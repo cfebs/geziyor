@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/cfebs/geziyor/internal"
+	"github.com/geziyor/geziyor/internal"
 	"os"
 )
 
